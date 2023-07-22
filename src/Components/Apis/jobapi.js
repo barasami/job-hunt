@@ -19,3 +19,7 @@ export const myApi=async()=>{
 	console.log(error);
     }
 }
+
+
+//
+
