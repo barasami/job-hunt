@@ -1,0 +1,18 @@
+
+.foot{
+    left: 0;
+    bottom: 0;
+    position: fixed;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(20, 20, 20);
+    font-style: italic;
+}

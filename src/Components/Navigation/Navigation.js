@@ -7,7 +7,14 @@ import { Link } from 'react-router-dom';
 
 function Navigation() {
   return (
-    <div>Navigation</div>
+    <div>
+        <div>
+            <Link to='/'><HomeIcon/></Link>
+            <Link to='/search'><ContentPasteSearchIcon/></Link>
+            <Link to='/resume'><WorkIcon/></Link>
+            <Link to='/letter'><EditCalendarIcon/></Link>
+        </div>
+    </div>
   )
 }
 
