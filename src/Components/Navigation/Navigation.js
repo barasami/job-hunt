@@ -4,15 +4,16 @@ import ContentPasteSearchIcon from '@mui/icons-material/ContentPasteSearch';//se
 import WorkIcon from '@mui/icons-material/Work';//resume
 import EditCalendarIcon from '@mui/icons-material/EditCalendar';//letter
 import { Link } from 'react-router-dom';
+import './Navigation.css'
 
 function Navigation() {
   return (
-    <div>
+    <div className='nav'>
         <div>
-            <Link to='/'><HomeIcon/></Link>
-            <Link to='/search'><ContentPasteSearchIcon/></Link>
-            <Link to='/resume'><WorkIcon/></Link>
-            <Link to='/letter'><EditCalendarIcon/></Link>
+          <div><Link to='/'><HomeIcon/></Link></div>
+          <div><Link to='/search'><ContentPasteSearchIcon/></Link></div>
+          <div><Link to='/resume'><WorkIcon/></Link></div>
+          <div><Link to='/letter'><EditCalendarIcon/></Link></div>
         </div>
     </div>
   )
