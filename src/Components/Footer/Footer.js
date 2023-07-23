@@ -6,7 +6,7 @@ function Footer() {
   return (
     <div className='foot'>
         <div className='footer'>
-            <p className='info'>&copy;jobhunt {today} All rights Reserved</p>
+          <p className='info'>&copy;jobhunt {today} All rights Reserved</p>
         </div>
     </div>
   )
