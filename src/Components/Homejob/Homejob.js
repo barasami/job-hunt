@@ -1,9 +1,12 @@
 import React from 'react'
+import './Homejob.css'
 import { myApi } from '../Apis/jobapi'
 
 function Homejob() {
   return (
-    <div>Homejob</div>
+    <div className='homejob'>
+      Homejob
+    </div>
   )
 }
 

@@ -9,11 +9,11 @@ import './Navigation.css'
 function Navigation() {
   return (
     <div className='nav'>
-        <div>
-          <div><Link to='/'><HomeIcon/></Link></div>
-          <div><Link to='/search'><ContentPasteSearchIcon/></Link></div>
-          <div><Link to='/resume'><WorkIcon/></Link></div>
-          <div><Link to='/letter'><EditCalendarIcon/></Link></div>
+        <div className='navigation'>
+          <div className='links'><Link to='/'><HomeIcon/></Link></div>
+          <div className='links'><Link to='/search'><ContentPasteSearchIcon/></Link></div>
+          <div className='links'><Link to='/resume'><WorkIcon/></Link></div>
+          <div className='links'><Link to='/letter'><EditCalendarIcon/></Link></div>
         </div>
     </div>
   )

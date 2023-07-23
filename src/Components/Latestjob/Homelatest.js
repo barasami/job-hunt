@@ -1,9 +1,12 @@
 import React from 'react'
+import './Latest.css'
 import { secondJob } from '../Apis/jobtwo'
 
 function Homelatest() {
   return (
-    <div>Homelatest</div>
+    <div className='homelatest'>
+      Homelatest
+    </div>
   )
 }
 
