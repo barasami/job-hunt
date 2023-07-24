@@ -11,9 +11,32 @@ function Homelatest() {
       console.log(data);
     })
   },[])
+
+  let latestDat=first.data
+  let allJobs=latestDat?.map(({url,title,postDate,jobSource,dateAdded,company,tags})=>{
+    let mytag=tags.map(({text})=>{
+      return(
+        <div>
+          <div>{text}</div>
+          
+        </div>
+      )
+    })
+    return(
+      <div>
+        <div>{title}</div>
+        <div>{company}</div>
+        <div>{dateAdded}</div>
+        <div>{postDate}</div>
+        <div>{jobSource}</div>
+        <div>{url}</div>
+        <div>{mytag}</div>
+      </div>
+    )
+  })
   return (
     <div className='homelatest'>
-      Homelatest
+      <div>{allJobs}</div>
     </div>
   )
 }

@@ -9,7 +9,6 @@ function Homejob() {
     myApi()
     .then(({data})=>{
       setJob(data)
-      console.log(data);
     })
   },[])
 
