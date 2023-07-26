@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './Latest.css'
 import { secondJob } from '../Apis/jobtwo'
 import CircularProgress from '@mui/material/CircularProgress';
+import { sliderClasses } from '@mui/material';
 
 function Homelatest() {
   const[first,setfirst]=useState([])
@@ -11,15 +12,16 @@ function Homelatest() {
     secondJob()
     .then(({data})=>{
       setfirst(data)
+      console.log(data);
       setLoad(false)
     })
   },[])
 
   let latestDat=first.data
-  let allJobs=latestDat?.map(({url,title,postDate,jobSource,dateAdded,company,tags})=>{
+  let allJobs=latestDat?.map(({url,title,postDate,jobSource,dateAdded,company,tags,slug})=>{
     let mytag=tags.map(({text})=>{
       return(
-        <div>
+        <div key={slug}>
           <div>{text}</div>
         </div>
       )

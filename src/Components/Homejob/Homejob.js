@@ -21,7 +21,7 @@ function Homejob() {
     return(
       <div key={id}>
         <div>{tittle}</div>
-        <div>{company_logo}</div>
+        <div><img src={company_logo} alt={company_name}/></div>
         <div>{company_name}</div>
         <div>{date}</div>
         <div>{location}</div>
