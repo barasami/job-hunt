@@ -8,7 +8,6 @@ function Homelatest() {
     secondJob()
     .then(({data})=>{
       setfirst(data)
-      console.log(data);
     })
   },[])
 
@@ -18,7 +17,6 @@ function Homelatest() {
       return(
         <div>
           <div>{text}</div>
-          
         </div>
       )
     })
