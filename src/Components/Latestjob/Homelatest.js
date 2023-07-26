@@ -1,13 +1,17 @@
 import React, { useEffect, useState } from 'react'
 import './Latest.css'
 import { secondJob } from '../Apis/jobtwo'
+import CircularProgress from '@mui/material/CircularProgress';
 
 function Homelatest() {
   const[first,setfirst]=useState([])
+  const[load,setLoad]=useState(false)
   useEffect(()=>{
+    setLoad(true)
     secondJob()
     .then(({data})=>{
       setfirst(data)
+      setLoad(false)
     })
   },[])
 
@@ -34,7 +38,12 @@ function Homelatest() {
   })
   return (
     <div className='homelatest'>
-      <div>{allJobs}</div>
+      <div>
+        {load ? <CircularProgress color='inherit' className='circular'/> : 
+        <div>
+          {allJobs}
+        </div>}
+      </div>
     </div>
   )
 }

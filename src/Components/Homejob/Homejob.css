@@ -10,3 +10,8 @@
     margin-top: 6em;
 
 }
+.circular{
+    top: 50%;
+    left: 50%;
+    position: fixed;
+}

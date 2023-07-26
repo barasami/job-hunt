@@ -1,14 +1,18 @@
 import React, { useEffect, useState } from 'react'
 import './Homejob.css'
 import { myApi } from '../Apis/jobapi'
+import CircularProgress from '@mui/material/CircularProgress';
 
 function Homejob() {
   const[job,setJob]=useState([])
+  const[load,setLoad]=useState(false)
 
   useEffect(()=>{
+    setLoad(true)
     myApi()
     .then(({data})=>{
       setJob(data)
+      setLoad(false)
     })
   },[])
 
@@ -27,7 +31,10 @@ function Homejob() {
   return (
     <div className='homejob'>
       <div>
-        {allJob}
+        {load ? <CircularProgress color='inherit' className='circular'/> : 
+        <div>
+          {allJob}
+        </div>}
       </div>
     </div>
   )
