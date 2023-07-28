@@ -32,9 +32,9 @@ function Homelatest() {
         <div className='company'>{company}</div>
         <div className='dateadd'>{dateAdded}</div>
         <div>{postDate}</div>
-        <div>{jobSource}</div>
-        <div><link href={url}></link><LinkIcon/></div>
-        <div>{mytag}</div>
+        <div className='source'>{jobSource}</div>
+        <div><a href={url} target='_blank' className='linking' rel="noreferrer"><LinkIcon color='success'/></a></div>
+        <div className='tags'>{mytag}</div>
       </div>
     )
   })

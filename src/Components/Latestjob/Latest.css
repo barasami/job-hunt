@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 6em;
+    margin-bottom: 3em;
 
 }
 .title{
@@ -16,6 +17,7 @@
     padding: .3em;
     color: purple;
     font-weight: bold;
+    text-decoration: underline;
 }
 .company{
     text-transform: capitalize;
@@ -31,4 +33,17 @@
 .dateadd{
     padding: .1em;
     
+}
+.tags{
+    color: rgb(216, 6, 216);
+    padding-left: .2em;
+    text-transform: capitalize;
+    font-style: italic;
+}
+.linking{
+    color: green;
+}
+.source{
+    text-transform: capitalize;
+    font-weight: bold;
 }
