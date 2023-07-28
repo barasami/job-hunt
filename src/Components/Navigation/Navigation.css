@@ -3,6 +3,17 @@
     padding: 0px;
     margin: 0px;
 }
+.link{
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    text-decoration: none;
+    padding: .1em;
+    color: rgb(87, 2, 87);
+}
+.link:hover{
+    color: purple;
+    font-weight: bold;
+}
 
 .nav{
     top: 2em;
@@ -16,7 +27,8 @@
     align-items: center;
     justify-content: space-evenly;
     margin-left: 30%;
-    margin-right: 10%;
+    margin-right: 30%;
+    
 }
 
 .links{

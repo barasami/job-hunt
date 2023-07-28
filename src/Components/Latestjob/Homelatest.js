@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './Latest.css'
 import { secondJob } from '../Apis/jobtwo'
 import CircularProgress from '@mui/material/CircularProgress';
-import { sliderClasses } from '@mui/material';
+import LinkIcon from '@mui/icons-material/Link';
 
 function Homelatest() {
   const[first,setfirst]=useState([])
@@ -28,12 +28,12 @@ function Homelatest() {
     })
     return(
       <div>
-        <div>{title}</div>
-        <div>{company}</div>
-        <div>{dateAdded}</div>
+        <div className='title'>{title}</div>
+        <div className='company'>{company}</div>
+        <div className='dateadd'>{dateAdded}</div>
         <div>{postDate}</div>
         <div>{jobSource}</div>
-        <div>{url}</div>
+        <div><link href={url}></link><LinkIcon/></div>
         <div>{mytag}</div>
       </div>
     )
@@ -41,7 +41,7 @@ function Homelatest() {
   return (
     <div className='homelatest'>
       <div>
-        {load ? <CircularProgress color='inherit' className='circular'/> : 
+        {load ? <CircularProgress color='secondary' className='circular'/> : 
         <div>
           {allJobs}
         </div>}

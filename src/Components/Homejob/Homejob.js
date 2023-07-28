@@ -31,7 +31,7 @@ function Homejob() {
   return (
     <div className='homejob'>
       <div>
-        {load ? <CircularProgress color='inherit' className='circular'/> : 
+        {load ? <CircularProgress color='secondary' className='circular'/> : 
         <div>
           {allJob}
         </div>}

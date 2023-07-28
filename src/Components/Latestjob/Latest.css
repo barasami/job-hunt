@@ -10,8 +10,25 @@
     margin-top: 6em;
 
 }
+.title{
+    text-transform: capitalize;
+    letter-spacing: .2em;
+    padding: .3em;
+    color: purple;
+    font-weight: bold;
+}
+.company{
+    text-transform: capitalize;
+    letter-spacing: .1em;
+    padding: .1em;
+    color: rgb(179, 2, 179);
+}
 .circular{
     left: 50%;
     top: 50%;
     position: fixed;
+}
+.dateadd{
+    padding: .1em;
+    
 }
