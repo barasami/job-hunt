@@ -26,11 +26,13 @@ function Homelatest() {
         </div>
       )
     })
+    let nDate=dateAdded.slice(0,10)
+    
     return(
       <div>
         <div className='title'>{title}</div>
         <div className='company'>{company}</div>
-        <div className='dateadd'>{dateAdded}</div>
+        <div className='dateadd'>{nDate}</div>
         <div>{postDate}</div>
         <div className='source'>{jobSource}</div>
         <div><a href={url} target='_blank' className='linking' rel="noreferrer"><LinkIcon color='success'/></a></div>

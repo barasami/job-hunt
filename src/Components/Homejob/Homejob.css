@@ -15,3 +15,22 @@
     left: 50%;
     position: fixed;
 }
+.title{
+    text-transform: capitalize;
+    letter-spacing: .2em;
+    padding: .3em;
+    color: purple;
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+.cname{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.location{
+    text-transform: capitalize;
+    font-weight: lighter;
+    color: rgb(239, 5, 239);
+
+}

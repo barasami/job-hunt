@@ -12,19 +12,21 @@ function Homejob() {
     myApi()
     .then(({data})=>{
       setJob(data)
+      console.log(data);
       setLoad(false)
     })
   },[])
 
   let jobNews=job.items
-  let allJob=jobNews?.map(({tittle,location,company_name,company_logo,date,id})=>{
+  let allJob=jobNews?.map(({title,location,company_name,company_logo,date,id})=>{
+    let nDate=date.slice(0,10)
     return(
       <div key={id}>
-        <div>{tittle}</div>
-        <div><img src={company_logo} alt={company_name}/></div>
-        <div>{company_name}</div>
-        <div>{date}</div>
-        <div>{location}</div>
+        <div className='title'>{title}</div>
+        <div className=''><img src={company_logo} alt={company_name}/></div>
+        <div className='cname'>{company_name}</div>
+        <div className=''>{nDate}</div>
+        <div className='location'>{location}</div>
       </div>
     )
   })
