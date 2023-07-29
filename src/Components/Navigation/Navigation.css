@@ -4,3 +4,21 @@
     margin: 0px;
 }
 
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.links{
+    padding: .2em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.link{
+    text-decoration: none;
+}
