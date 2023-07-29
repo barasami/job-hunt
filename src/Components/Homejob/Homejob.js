@@ -18,12 +18,11 @@ function Homejob() {
   },[])
 
   let jobNews=job.items
-  let allJob=jobNews?.map(({title,location,company_name,company_logo,date,id})=>{
+  let allJob=jobNews?.map(({title,location,company_name,date,id})=>{
     let nDate=date.slice(0,10)
     return(
       <div key={id}>
         <div className='title'>{title}</div>
-        <div className=''><img src={company_logo} alt={company_name}/></div>
         <div className='cname'>{company_name}</div>
         <div className=''>{nDate}</div>
         <div className='location'>{location}</div>
