@@ -28,3 +28,9 @@
     text-decoration: none;
     color:purple;
 }
+.link:hover{
+    border: 1px solid purple;
+    padding: .1em;
+    border-radius: 2px;
+}
+
