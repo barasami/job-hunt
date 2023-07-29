@@ -9,7 +9,9 @@
     width: 100%;
     position: fixed;
     margin-bottom: .2em;
-    padding-top: 5em;
+    margin-top: 2em;
+   
+    
 }
 .footer{
     display: flex;
