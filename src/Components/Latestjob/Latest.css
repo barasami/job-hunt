@@ -10,6 +10,7 @@
     margin-top: 6em;
     margin-bottom: 3em;
 
+
 }
 .title{
     text-transform: capitalize;
@@ -46,4 +47,9 @@
 .source{
     text-transform: capitalize;
     font-weight: bold;
+}
+.paper{
+    padding: 1.5em;
+    margin-bottom: .4em;
+    
 }

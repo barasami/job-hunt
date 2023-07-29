@@ -3,6 +3,7 @@ import './Latest.css'
 import { secondJob } from '../Apis/jobtwo'
 import CircularProgress from '@mui/material/CircularProgress';
 import LinkIcon from '@mui/icons-material/Link';
+import Paper from '@mui/material/Paper';
 
 function Homelatest() {
   const[first,setfirst]=useState([])
@@ -29,7 +30,7 @@ function Homelatest() {
     let nDate=dateAdded.slice(0,10)
     
     return(
-      <div>
+      <Paper elevation={2} className='paper'>
         <div className='title'>{title}</div>
         <div className='company'>{company}</div>
         <div className='dateadd'>{nDate}</div>
@@ -37,7 +38,7 @@ function Homelatest() {
         <div className='source'>{jobSource}</div>
         <div><a href={url} target='_blank' className='linking' rel="noreferrer"><LinkIcon color='success'/></a></div>
         <div className='tags'>{mytag}</div>
-      </div>
+      </Paper>
     )
   })
   return (
