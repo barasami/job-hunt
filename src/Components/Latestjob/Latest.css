@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
+    
 }
 .homelatest{
     display: flex;
@@ -53,5 +54,8 @@
     padding: 1.5em;
     margin-bottom: .4em;
     margin-top: .8em;
+    
+}
+.jobs{
     
 }

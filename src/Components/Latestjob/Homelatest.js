@@ -45,7 +45,7 @@ function Homelatest() {
     <div className='homelatest'>
       <div>
         {load ? <CircularProgress color='secondary' className='circular'/> : 
-        <div>
+        <div className='jobs'>
           {allJobs}
         </div>}
       </div>

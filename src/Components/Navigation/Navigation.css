@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
+   
 }
 
 .nav{
@@ -24,9 +25,19 @@
     text-decoration: none;
     text-transform: uppercase;
 }
+.alltitle{
+    margin-top: .6em;
+    padding: .6em;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-weight: bolder;
+
+}
 .link{
     text-decoration: none;
     color:purple;
+    font-weight: lighter;
 }
 .link:hover{
     border: 1px solid purple;
