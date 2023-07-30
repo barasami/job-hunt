@@ -8,8 +8,8 @@
     bottom: 0;
     width: 100%;
     position: fixed;
-    margin-bottom: .2em;
     margin-top: 2em;
+    background-color: rgb(240, 234, 234);
    
     
 }
@@ -24,4 +24,5 @@
     justify-content: center;
     color:purple;
     font-style: italic;
+    padding: .4em;
 }

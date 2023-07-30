@@ -32,7 +32,7 @@ function Homejob() {
   })
   return (
     <div className='homejob'>
-      <div>
+      <div className='allhomejob'>
         {load ? <CircularProgress color='secondary' className='circular'/> : 
         <div className='alljobs'>
           {allJob}
